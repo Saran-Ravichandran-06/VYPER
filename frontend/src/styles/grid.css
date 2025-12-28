@@ -1,0 +1,44 @@
+/* Grid styles */
+/* Game board container */
+.game-board {
+  display: grid;
+  background-color: #222;
+  border: 3px solid #b00020;
+}
+
+/* Single cell */
+.cell {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* Empty cell */
+.cell.empty {
+  background-color: #222;
+}
+
+/* Snake head */
+.cell.snake-head {
+  background-color: #00ff99;
+}
+
+/* Snake body */
+.cell.snake-body {
+  background-color: #00cc77;
+}
+
+/* Food */
+.cell.food {
+  background-color: #333;
+}
+
+/* Wall */
+.cell.wall {
+  background-color: #b00020;   /* deep red */
+  color: #ffd6d6;
+  font-weight: bold;
+}
